@@ -1,0 +1,8 @@
+{
+  "name": "hipsterbg",
+  "description": "Gradient backgrounds for all.",
+  "main": "dist/css/hipsterbg.css",
+  "version": "0.0.1",
+  "dependencies": {}
+}
+
