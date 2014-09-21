@@ -1,0 +1,23 @@
+orange-start = #ffbb63
+orange-middle = #ffa939
+orange-end = #ff9000
+
+.hipsterbg
+  &.orange
+      background radial-gradient(ellipse at 50% 0%, orange-start 10%, orange-middle 50%,  orange-end 120%)
+      &.tl
+        background radial-gradient(ellipse farthest-side at top left, orange-start 10%, orange-middle 50%,  orange-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at top left, orange-start 10%, orange-middle 50%,  orange-end 120%))
+      &.tr
+        background radial-gradient(ellipse farthest-side at top right, orange-start 10%, orange-middle 50%,  orange-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at top right, orange-start 10%, orange-middle 50%,  orange-end 120%))
+      &.bl
+        background radial-gradient(ellipse farthest-side at bottom left, orange-start 10%, orange-middle 50%,  orange-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at bottom left, orange-start 10%, orange-middle 50%,  orange-end 120%))
+      &.br
+        background radial-gradient(ellipse farthest-side at bottom right, orange-start 10%, orange-middle 50%,  orange-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at bottom right, orange-start 10%, orange-middle 50%,  orange-end 120%))

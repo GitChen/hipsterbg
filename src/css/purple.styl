@@ -1,0 +1,23 @@
+purple-start = #9f4fbf
+purple-middle = #8a2dae
+purple-end = #7c07a9
+
+.hipsterbg
+  &.purple
+    background radial-gradient(ellipse at 50% 0%, purple-start 10%, purple-middle 50%,  purple-end 120%)
+    &.tl
+      background radial-gradient(ellipse farthest-side at top left, purple-start 10%, purple-middle 50%,  purple-end 120%)
+      &.noise
+        bgnoise(radial-gradient(ellipse farthest-side at top left, purple-start 10%, purple-middle 50%,  purple-end 120%))
+    &.tr
+      background radial-gradient(ellipse farthest-side at top right, purple-start 10%, purple-middle 50%,  purple-end 120%)
+      &.noise
+        bgnoise(radial-gradient(ellipse farthest-side at top right, purple-start 10%, purple-middle 50%,  purple-end 120%))
+    &.bl
+      background radial-gradient(ellipse farthest-side at bottom left, purple-start 10%, purple-middle 50%,  purple-end 120%)
+      &.noise
+        bgnoise(radial-gradient(ellipse farthest-side at bottom left, purple-start 10%, purple-middle 50%,  purple-end 120%))
+    &.br
+      background radial-gradient(ellipse farthest-side at bottom right, purple-start 10%, purple-middle 50%,  purple-end 120%)
+      &.noise
+        bgnoise(radial-gradient(ellipse farthest-side at bottom right, purple-start 10%, purple-middle 50%,  purple-end 120%))

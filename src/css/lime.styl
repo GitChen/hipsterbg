@@ -1,0 +1,23 @@
+lime-start = #cdf55f
+lime-middle = #c0f236
+lime-end = #b1f100
+
+.hipsterbg
+  &.lime
+      background radial-gradient(ellipse at 50% 0%, lime-start 10%, lime-middle 50%,  lime-end 120%)
+      &.tl
+        background radial-gradient(ellipse farthest-side at top left, lime-start 10%, lime-middle 50%,  lime-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at top left, lime-start 10%, lime-middle 50%,  lime-end 120%))
+      &.tr
+        background radial-gradient(ellipse farthest-side at top right, lime-start 10%, lime-middle 50%,  lime-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at top right, lime-start 10%, lime-middle 50%,  lime-end 120%))
+      &.bl
+        background radial-gradient(ellipse farthest-side at bottom left, lime-start 10%, lime-middle 50%,  lime-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at bottom left, lime-start 10%, lime-middle 50%,  lime-end 120%))
+      &.br
+        background radial-gradient(ellipse farthest-side at bottom right, lime-start 10%, lime-middle 50%,  lime-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at bottom right, lime-start 10%, lime-middle 50%,  lime-end 120%))

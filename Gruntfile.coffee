@@ -13,6 +13,11 @@ module.exports = (grunt) ->
   
   grunt.initConfig
     config: options
+    
+    coffee:
+      compile:
+        files:
+          'dist/js/page.js':['src/js/page.coffee']
 
     stylus: 
       compile: 
@@ -73,8 +78,13 @@ module.exports = (grunt) ->
         files:['src/views/**/*.jade']
         tasks: 'jade'
 
+      coffee:
+        files: ['src/js/**/*.coffee']
+        tasks: 'coffee'
+
     grunt.registerTask 'default', [
       'jade'
+      'coffee'
       'stylus'
       'cssmin'
       'connect'

@@ -1,0 +1,23 @@
+red-start = #fc626a
+red-middle = #fb3842
+red-end = #fb000d
+
+.hipsterbg
+  &.red
+    background radial-gradient(ellipse at 50% 0%, red-start 10%, red-middle 50%,  red-end 120%)
+    &.tl
+      background radial-gradient(ellipse farthest-side at top left, red-start 10%, red-middle 50%,  red-end 120%)
+      &.noise
+        bgnoise(radial-gradient(ellipse farthest-side at top left, red-start 10%, red-middle 50%,  red-end 120%))
+    &.tr
+      background radial-gradient(ellipse farthest-side at top right, red-start 10%, red-middle 50%,  red-end 120%)
+      &.noise
+        bgnoise(radial-gradient(ellipse farthest-side at top right, red-start 10%, red-middle 50%,  red-end 120%))
+    &.bl
+      background radial-gradient(ellipse farthest-side at bottom left, red-start 10%, red-middle 50%,  red-end 120%)
+      &.noise
+        bgnoise(radial-gradient(ellipse farthest-side at bottom left, red-start 10%, red-middle 50%,  red-end 120%))
+    &.br
+      background radial-gradient(ellipse farthest-side at bottom right, red-start 10%, red-middle 50%,  red-end 120%)
+      &.noise
+        bgnoise(radial-gradient(ellipse farthest-side at bottom right, red-start 10%, red-middle 50%,  red-end 120%))

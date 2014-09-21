@@ -1,0 +1,27 @@
+grey-start = #9b9b9a
+grey-middle = #6d6d6d
+grey-end = #3b3b3b
+
+.hipsterbg
+  &.grey
+      background radial-gradient(ellipse at 50% 0%, grey-start 10%, grey-middle 50%,  grey-end 120%)
+      &.tc
+        background radial-gradient(ellipse at 50% 0%, grey-start 10%, grey-middle 50%,  grey-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse at 50% 0%, grey-start 10%, grey-middle 50%,  grey-end 120%))    
+      &.tl
+        background radial-gradient(ellipse farthest-side at top left, grey-start 10%, grey-middle 50%,  grey-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at top left, grey-start 10%, grey-middle 50%,  grey-end 120%))
+      &.tr
+        background radial-gradient(ellipse farthest-side at top right, grey-start 10%, grey-middle 50%,  grey-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at top right, grey-start 10%, grey-middle 50%,  grey-end 120%))
+      &.bl
+        background radial-gradient(ellipse farthest-side at bottom left, grey-start 10%, grey-middle 50%,  grey-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at bottom left, grey-start 10%, grey-middle 50%,  grey-end 120%))
+      &.br
+        background radial-gradient(ellipse farthest-side at bottom right, grey-start 10%, grey-middle 50%,  grey-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at bottom right, grey-start 10%, grey-middle 50%,  grey-end 120%))

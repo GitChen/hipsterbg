@@ -1,0 +1,23 @@
+mint-start = #4dc58b
+mint-middle = #29b672
+mint-end = #00b25c
+
+.hipsterbg
+  &.mint
+      background radial-gradient(ellipse at 50% 0%, mint-start 10%, mint-middle 50%,  mint-end 120%)
+      &.tl
+        background radial-gradient(ellipse farthest-side at top left, mint-start 10%, mint-middle 50%,  mint-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at top left, mint-start 10%, mint-middle 50%,  mint-end 120%))
+      &.tr
+        background radial-gradient(ellipse farthest-side at top right, mint-start 10%, mint-middle 50%,  mint-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at top right, mint-start 10%, mint-middle 50%,  mint-end 120%))
+      &.bl
+        background radial-gradient(ellipse farthest-side at bottom left, mint-start 10%, mint-middle 50%,  mint-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at bottom left, mint-start 10%, mint-middle 50%,  mint-end 120%))
+      &.br
+        background radial-gradient(ellipse farthest-side at bottom right, mint-start 10%, mint-middle 50%,  mint-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at bottom right, mint-start 10%, mint-middle 50%,  mint-end 120%))

@@ -1,0 +1,23 @@
+pink-start = #d955a0
+pink-middle = #d02e8a
+pink-end = #cd0074
+
+.hipsterbg
+  &.pink
+      background radial-gradient(ellipse at 50% 0%, pink-start 10%, pink-middle 50%,  pink-end 120%)
+      &.tl
+        background radial-gradient(ellipse farthest-side at top left, pink-start 10%, pink-middle 50%,  pink-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at top left, pink-start 10%, pink-middle 50%,  pink-end 120%))
+      &.tr
+        background radial-gradient(ellipse farthest-side at top right, pink-start 10%, pink-middle 50%,  pink-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at top right, pink-start 10%, pink-middle 50%,  pink-end 120%))
+      &.bl
+        background radial-gradient(ellipse farthest-side at bottom left, pink-start 10%, pink-middle 50%,  pink-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at bottom left, pink-start 10%, pink-middle 50%,  pink-end 120%))
+      &.br
+        background radial-gradient(ellipse farthest-side at bottom right, pink-start 10%, pink-middle 50%,  pink-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at bottom right, pink-start 10%, pink-middle 50%,  pink-end 120%))

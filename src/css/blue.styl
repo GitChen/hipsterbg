@@ -1,0 +1,27 @@
+blue-start = #5189bc
+blue-middle = #2f70aa
+blue-end = #0c5da5
+
+.hipsterbg
+  &.blue
+      background radial-gradient(ellipse at 50% 0%, blue-start 10%, blue-middle 50%,  blue-end 120%)
+      &.tc
+        background radial-gradient(ellipse at 50% 0%, blue-start 10%, blue-middle 50%,  blue-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse at 50% 0%, blue-start 10%, blue-middle 50%,  blue-end 120%))
+      &.tl
+        background radial-gradient(ellipse farthest-side at top left, blue-start 10%, blue-middle 50%,  blue-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at top left, blue-start 10%, blue-middle 50%,  blue-end 120%))
+      &.tr
+        background radial-gradient(ellipse farthest-side at top right, blue-start 10%, blue-middle 50%,  blue-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at top right, blue-start 10%, blue-middle 50%,  blue-end 120%))
+      &.bl
+        background radial-gradient(ellipse farthest-side at bottom left, blue-start 10%, blue-middle 50%,  blue-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at bottom left, blue-start 10%, blue-middle 50%,  blue-end 120%))
+      &.br
+        background radial-gradient(ellipse farthest-side at bottom right, blue-start 10%, blue-middle 50%,  blue-end 120%)
+        &.noise
+          bgnoise(radial-gradient(ellipse farthest-side at bottom right, blue-start 10%, blue-middle 50%,  blue-end 120%))
