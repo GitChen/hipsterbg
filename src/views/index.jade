@@ -14,18 +14,19 @@ html.no-js(lang='')
     link(href="http://fonts.googleapis.com/css?family=Raleway:400,700", rel="stylesheet", type="text/css")
     script(src="http://cdnjs.cloudflare.com/ajax/libs/knockout/3.1.0/knockout-min.js")
   body
-    header.intro.hipsterbg(data-bind="css: hipsterClass")
+    header.intro(data-bind="css: hipsterClass")
       .intro-body
           .row
             .col-md-8.col-md-offset-2
               h1.brand-heading Hipster BG
-              pre
-                | Test this out
+
+              section
+                pre(data-bind ="text: hipsterClass")
+
               .update-bg
                 include _select_color
                 include _select_location
                 include _select_noise
-              a.btn.btn-circle.page-scroll(href='#work')
-                i.fa.fa-angle-down.animated
+
     script(src="js/page.js")
   

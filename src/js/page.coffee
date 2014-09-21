@@ -7,9 +7,8 @@ class viewModel
     @hipsterClass = ko.observable()
 
   getClass: (noise) =>
-    return @selectedColor() + " " + @selectedLocation() + " noise"  if @showNoise()
-    return @selectedColor() + " " + @selectedLocation()
-  
+    return 'hipsterbg' + ' ' +  @selectedColor() + ' ' + @selectedLocation() + ' ' + 'noise'  if @showNoise()
+    return 'hipsterbg' + ' ' +  @selectedColor() + ' ' + @selectedLocation()
   subscribe: () =>
     @selectedColor.subscribe (color) =>
       @hipsterClass(@getClass())

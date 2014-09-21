@@ -20,13 +20,16 @@ pre
   color white
   display inline-block
   padding 11px 13px 10px
-  font 12px
   text-shadow 0 1px 0 rgba(25,53,71,.12)
   background rgba(0,0,0,0.3)
   border 1px solid rgba(25,53,71,.04)
   border-top-color rgba(25,53,71,.08)
   box-shadow 0 1px 0 rgba(255,255,255,.1)
   border-radius 5px
+  font-size 16px
+
+input[type=checkbox]
+  visibility hidden
 
 
 .intro
@@ -44,3 +47,46 @@ pre
     text-shadow 2px 2px rgba(0,0,0,0.4)
   .intro-text
     font-size 36px
+
+.slideOne
+  width 50px
+  height 32px
+  background #333
+  margin 0 auto
+  -webkit-border-radius 50px
+  -moz-border-radius 50px
+  border-radius 50px
+  position relative
+  -webkit-box-shadow inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2)
+  -moz-box-shadow inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2)
+  box-shadow inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2)
+  label
+    display block
+    width 32px
+    height 32px
+    -webkit-border-radius 50px
+    -moz-border-radius 50px
+    border-radius 50px
+    -webkit-transition all .4s ease
+    -moz-transition all .4s ease
+    -o-transition all .4s ease
+    -ms-transition all .4s ease
+    transition all .4s ease
+    cursor pointer
+    position absolute
+    top 0px
+    left 0px
+    -webkit-box-shadow 0px 2px 5px 0px rgba(0,0,0,0.3)
+    -moz-box-shadow 0px 2px 5px 0px rgba(0,0,0,0.3)
+    box-shadow 0px 2px 5px 0px rgba(0,0,0,0.3)
+    background #fcfff4
+    background -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%)
+    background -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%)
+    background -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%)
+    background -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%)
+    background linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%)
+  input[type=checkbox]:checked
+    & + label
+      left 20px
+
+
