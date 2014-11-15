@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/hipsterbg.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/knockout/3.1.0/knockout-min.js"></script>
+  </head>
+  <body>
+    <div data-bind="css: hipsterClass" class="intro">
+      <div class="intro-body container-fluid">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h1 class="brand-heading">Hipster BG</h1>
+            <section class="col-md-12">
+              <div class="col-md-4">
+                <select data-bind="value: selectedColor" class="form-control">
+                  <option value="blue">Blue</option>
+                  <option value="grey">Grey</option>
+                  <option value="lime">Lime</option>
+                  <option value="mint">Mint</option>
+                  <option value="orange">Orange</option>
+                  <option value="pink">Pink</option>
+                  <option value="purple">Purple</option>
+                  <option value="red">Red</option>
+                  <option value="teal">Teal</option>
+                  <option value="yellow">Yellow</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <select data-bind="value: selectedLocation" class="form-control">
+                  <option value="tc">Top Center</option>
+                  <option value="tl">Top Left</option>
+                  <option value="tr">Top Right</option>
+                  <option value="bl">Bottom Left</option>
+                  <option value="br">Bottom Right</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <div class="slideOne">
+                  <input id="slideOne" type="checkbox" data-bind="checked: showNoise" checked="checked">
+                  <label for="slideOne"></label>
+                </div>
+              </div>
+            </section>
+            <section class="col-md-12">
+              <pre data-bind="text: hipsterClass" class="css-class"></pre>
+            </section>
+            <section class="col-md-12">
+              <h1>Install with Bower</h1>
+              <pre class="code"><code>$ bower install hipsterbg --save</code></pre>
+            </section>
+            <section class="col-md-12">
+              <h1>On Github</h1>
+              <pre class="code"><code>$ git clone https://github.com/RickFrom1987/hipsterbg.git</code></pre>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer container">
+      <div class="row">
+        <div class="col-md-12"></div>
+      </div>
+    </footer>
+    <script src="js/page.js"></script>
+  </body>
+</html>
