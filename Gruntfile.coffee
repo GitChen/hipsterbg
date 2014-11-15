@@ -95,5 +95,4 @@ module.exports = (grunt) ->
       'coffee'
       'stylus'
       'cssmin'
-      'connect'
     ]
