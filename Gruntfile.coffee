@@ -90,3 +90,10 @@ module.exports = (grunt) ->
       'connect'
       'watch'
     ]
+    grunt.registerTask 'deploy', [
+      'jade'
+      'coffee'
+      'stylus'
+      'cssmin'
+      'connect'
+    ]
